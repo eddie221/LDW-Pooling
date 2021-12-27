@@ -1,1 +1,7 @@
-LDW-Pooling
+# Learnable Discrete Wavelet Pooling (LDW-Pooling) For Convolutional Networks
+Bor-Shiun Wang, Jun-Wei Hsieh, Ming-Ching Chang, Ping-Yang Chen, Lipeng Ke, Siwei Lyu
+
+## Abstract 
+Pooling is a simple but essential layer in modern deep CNN architectures for feature aggregation and extraction. Typical CNN design focuses on the conv layers and activation functions, while leaving the pooling layers with fewer options. We introduce the Learning Discrete Wavelet Pooling (LDW-Pooling) that can be applied universally to replace standard pooling operations to better extract features with improved accuracy and efficiency. Motivated from the wavelet theory, we adopt the low-pass (L) and high-pass (H) filters horizontally and vertically for pooling on a 2D feature map. Feature signals are decomposed into four (LL, LH, HL, HH) subbands to retain features better and avoid information dropping. The wavelet transform ensures features after pooling can be fully preserved and recovered. We next adopt an energy-based attention learning to fine-select crucial and representative features. LDW-Pooling is effective and efficient when compared with other state-of-the-art pooling techniques such as WaveletPooling and LiftPooling. Extensive experimental validation shows that LDW-Pooling can be applied to a wide range of standard CNN architectures and consistently outperform standard (max, mean, mixed, and stochastic) pooling operations.
+# Method
+![image](https://github.com/eddie221/LDW-Pooling/blob/main/LDW-pooling.png)
